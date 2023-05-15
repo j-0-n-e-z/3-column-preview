@@ -595,6 +595,10 @@ video {
   }
 }
 
+.fixed{
+  position: fixed;
+}
+
 .my-\[90px\]{
   margin-top: 90px;
   margin-bottom: 90px;
@@ -622,6 +626,12 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.scale-0{
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-col{
