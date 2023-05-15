@@ -532,7 +532,7 @@ video {
   padding-right: 30px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-family: 'Lexend Deca';
+  font-family: Lexend Deca, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 15px;
   text-transform: capitalize;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
@@ -555,7 +555,7 @@ video {
 
 .heading{
   margin-bottom: 1.25rem;
-  font-family: 'Big Shoulders Display';
+  font-family: Big Shoulders Display, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 40px;
   text-transform: uppercase;
   --tw-text-opacity: 1;
@@ -569,7 +569,7 @@ video {
 }
 
 .description{
-  font-family: 'Lexend Deca';
+  font-family: Lexend Deca, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 15px;
   line-height: 1.55rem;
   color: hsla(0, 0%, 100%, 0.75);
@@ -577,7 +577,8 @@ video {
 
 .card-item{
   display: flex;
-  flex: 1 1 0%;
+  width: -moz-fit-content;
+  width: fit-content;
   flex-direction: column;
   padding-left: 3rem;
   padding-right: 3rem;
@@ -585,12 +586,14 @@ video {
   padding-bottom: 3rem;
 }
 
-.card-item--icon{
+.card-item__icon{
   margin-bottom: 1.5rem;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 @media (min-width: 1024px){
-  .card-item--icon{
+  .card-item__icon{
     margin-bottom: 2rem;
   }
 }
@@ -610,10 +613,6 @@ video {
 
 .grid{
   display: grid;
-}
-
-.hidden{
-  display: none;
 }
 
 .min-h-screen{
